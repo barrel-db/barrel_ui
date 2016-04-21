@@ -159,7 +159,6 @@ body {
 .bg-white {
   background-color: #fff;
   color: #717171;
-  padding-top: 7px;
 }
 
 header h4 {
@@ -171,3 +170,26 @@ header .fa {
   color: #413C58;
 }
 
+.nav-tabs{
+  border: none;
+}
+
+.nav-tabs > li {
+    float: left;
+    text-align: center;
+}
+
+.nav-tabs > li > a, 
+.nav-tabs > li > a:hover, 
+.nav-tabs > li > a:focus {
+  text-transform: uppercase;
+  background: white;
+  margin-right: 0px;
+}
+
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus{
+  border: none;
+  background: #f3f5f9
+}
