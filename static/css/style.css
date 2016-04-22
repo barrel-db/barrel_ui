@@ -48,6 +48,7 @@ body {
 .header,.footer {
   min-height: 55px;
   padding: 0 15px;
+  margin-bottom: 30px;
 }
 
 .nav-primary>ul>li>a {
