@@ -211,3 +211,36 @@ header .fa {
     right: 0;
 }
 
+#signup-rotate .wrapper-doctor {
+    margin: 0 auto;
+    width: 51%;
+    margin-top: 200px;
+    padding: 15px 50px 25px 50px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.btn-primary{
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-primary {
+  width: 100%;
+  border: 1px solid #413C58;
+  border-radius: 0px;
+  color: #413C58;
+  text-shadow: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #413C58;
+  color: #ffffff;
+}
+

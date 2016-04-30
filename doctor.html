@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Barrel Admin</title>
+  <title>Doctor</title>
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -10,7 +10,7 @@
   <link href="static/css/style.css" rel="stylesheet" >
 
 </head>
-<body>
+<body id="signup-rotate">
   <section class="hbox stretch">
 
     <!-- side menu -->
@@ -62,41 +62,64 @@
 
     <section id="content">
       <section class="vbox">
-        <header class="header bg-white">
-          <div class="col-sm-2 col-md-2">
+        <header class="header bg-white hidden-xs">
+          <div class="col-sm-6 col-md-3">
             <span class="text-uppercase">Host Name</span>
             <h4>barrel@127.0.0.1</h4>
           </div>
-          <div class="col-sm-2 col-md-2">
+          <div class="col-sm-6 col-md-3">
             <span class="text-uppercase">Devices</span>
             <h4>2 Connections</h4>
           </div>
-          <div class="col-md-2">
+          <div class="hidden-xs hidden-sm col-md-2">
             <a href="https://docs.barrel-db.org/" target="_blank">
               <i class="fa fa-question-circle-o fa-3x" aria-hidden="true"></i>
             </a>
           </div>
         </header>
-        <section class="scrollable wrapper">
 
 
-        <!-- body -->
-        <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
-            <li class="active"><a data-toggle="tab" href="#red">Section 1</a></li>
-            <li><a data-toggle="tab" href="#orange">Section 2</a></li>
-            <li><a data-toggle="tab" href="#yellow">Section 3</a></li>
-        </ul>
+        <div id="content">
+          <ul id="tabs" class="nav nav-tabs nav-justified" data-tabs="tabs">
+              <li class="active"><a href="#create" data-toggle="tab">Verify Installation</a></li>
+          </ul>
+
+          <div id="my-tab-content" class="tab-content">
+              <div class="tab-pane active" id="create">
 
 
-        </section>
+
+
+                <section class="scrollable wrapper-doctor text-center">
+
+                  <button class="btn btn-primary">Press to verify your installation</button>
+
+                </section>
+
+
+
+              </div>
+
+          </div>
+        </div>
+
+
+
+
       </section>
-    </section><!-- /.vbox -->
+    </section>
   </section>
 
-<script   src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+    });
+</script>  
 
 </body>
 </html>
