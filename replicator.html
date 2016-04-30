@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Security</title>
+  <title>Replicator</title>
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -13,7 +13,7 @@
 <body id="signup-rotate">
   <section class="hbox stretch">
 
-    <!-- side menu -->
+     <!-- side menu -->
     <aside class="bg-primary aside-sm nav-vertical" id="nav">
       <section class="vbox">
 
@@ -82,91 +82,48 @@
 
         <div id="content">
           <ul id="tabs" class="nav nav-tabs nav-justified" data-tabs="tabs">
-              <li class="active"><a href="#create" data-toggle="tab">Create Administrators</a></li>
-              <li><a href="#manage" data-toggle="tab">Manage Administrators</a></li>
+              <li class="active"><a href="#create" data-toggle="tab">Create Replications</a></li>
+              <li><a href="#manage" data-toggle="tab">Manage Replications</a></li>
           </ul>
           <div id="my-tab-content" class="tab-content">
-              <div class="tab-pane active" id="create">
+            
+            <div class="tab-pane active" id="create">
+              <section class="scrollable wrapper">
+
+              <!-- The internal of tab 1 -->
+
+                <h3>Replicate from</h3>
+
+                <form role="form">        
+                  <div class="form-group">
+                    <label for="username">Local Database</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Database 1</option>
+                      <option value="">Database 2</option>
+                      <option value="">Database 3</option>
+                      <option value="">Database 4</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="pwd">Remote database</label>
+                    <input type="password" class="form-control" id="pwd">
+                  </div>
+
+                  <button type="submit" class="btn btn-default btn-block">Replicate to</button>
+                </form>
 
 
-
-
-        <section class="scrollable wrapper">
-
-        <!-- The internal of tab 1 -->
-
-
-          <h3>Create User</h3>
-
-          <p>Before a server admin is configured, all clients have admin privileges. This is fine when HTTP access is restricted to trusted users. If end-users will be accessing this Barrel, you must create an admin account to prevent accidental (or malicious) data loss.</p>
-
-          <p>Server admins can create and destroy databases, install and update _design documents, run the test suite, and edit all aspects of Barrel configuration.</p>
-
-          <form role="form">        
-            <div class="form-group">
-              <label for="username">Username</label>
-              <input type="username" class="form-control" id="username">
+              </section>
             </div>
             
-            <div class="form-group">
-              <label for="pwd">Password:</label>
-              <input type="password" class="form-control" id="pwd">
-            </div>
+            <div class="tab-pane" id="manage">
 
-            <button type="submit" class="btn btn-default btn-block">Create</button>
-          </form>
-
-
-        </section>
+                  <section class="scrollable wrapper">
 
 
 
-              </div>
-              <div class="tab-pane" id="manage">
-
-        <section class="scrollable wrapper">
-
-
-
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Username</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>benoitc</td>
-                  <td><button class="btn btn-small btn-danger">Delete</button></td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>sivsushruth</td>
-                  <td><button class="btn btn-small btn-danger">Delete</button></td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>pjhampton</td>
-                  <td><button class="btn btn-small btn-danger">Delete</button></td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>papachan</td>
-                  <td><button class="btn btn-small btn-danger">Delete</button></td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td>capnemo</td>
-                  <td><button class="btn btn-small btn-danger">Delete</button></td>
-                </tr>
-              </tbody>
-            </table>
-
-
-        </section>
+                  </section>
 
 
 
@@ -181,14 +138,14 @@
     </section>
   </section>
 
-<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
     jQuery(document).ready(function ($) {
         $('#tabs').tab();
     });
-</script>  
+</script>
 
 </body>
 </html>

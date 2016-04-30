@@ -47,7 +47,7 @@ body {
 
 .header,.footer {
   min-height: 55px;
-  padding: 0 15px;
+  padding: 6px 15px;
 }
 
 .nav-primary>ul>li>a {
@@ -222,6 +222,19 @@ header .fa {
     right: 0;
 }
 
+#signup-rotate .wrapper-documents {
+    margin: 0 auto;
+    width: 51%;
+    margin-top: 25px;
+    background: #fff;
+    padding: 15px 50px 25px 50px;
+    border-radius: 5px;
+    border-top: 6px solid #413C58;
+    left: 0;
+    right: 0;
+}
+
+
 .btn-primary{
   background: none;
   border: none;
@@ -246,4 +259,35 @@ header .fa {
 
 .databases {
   margin-top: 20px;
+}
+
+pre{
+  border-radius: 0px;
+  border: none;
+}
+
+ul#tabs li a {
+  color: #413C58;
+}
+
+/* Bootstrap overrides */
+
+@media (min-width: 768px)
+.nav-tabs.nav-justified > .active > a, 
+.nav-tabs.nav-justified > .active > a:hover, 
+.nav-tabs.nav-justified > .active > a:focus {
+  border-bottom-color: transparent;
+}
+
+.nav-tabs.nav-justified > .active > a, 
+.nav-tabs.nav-justified > .active > a:hover, 
+.nav-tabs.nav-justified > .active > a:focus {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .nav-tabs.nav-justified > li > a {
+    border-bottom: none;
+    border-radius: 0;
+  }
 }

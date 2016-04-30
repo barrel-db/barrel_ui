@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Doctor</title>
+  <title>Barrel Admin</title>
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  <link href="static/css/bootstrap.css" rel="stylesheet" >
-  <link href="static/css/style.css" rel="stylesheet" >
+  <link href="../static/css/bootstrap.css" rel="stylesheet" >
+  <link href="../static/css/style.css" rel="stylesheet" >
 
 </head>
-<body id="signup-rotate">
+<body>
   <section class="hbox stretch">
 
     <!-- side menu -->
@@ -21,7 +21,7 @@
           <ul class="nav">
 
             <li class="active">
-              <a href="index.html"><i class="fa fa-eye"></i>
+              <a href="barrel.html"><i class="fa fa-eye"></i>
                 <span>Barrel</span>
               </a>
             </li>
@@ -79,45 +79,35 @@
           </div>
         </header>
 
-
-        <div id="content">
-          <ul id="tabs" class="nav nav-tabs nav-justified" data-tabs="tabs">
-              <li class="active"><a href="#create" data-toggle="tab">Verify Installation</a></li>
+        <section class="scrollable wrapper">
+          <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
+              <li class="active"><a data-toggle="tab" href="#sect1">Section 1</a></li>
+              <li><a data-toggle="tab" href="#sect2">Section 2</a></li>
           </ul>
 
           <div id="my-tab-content" class="tab-content">
-              <div class="tab-pane active" id="create">
+            <div class="tab-pane active" id="sect1">
+              <h1>Section 1</h1>
+            </div>
 
-
-
-
-                <section class="scrollable wrapper-doctor text-center">
-
-                  <button class="btn btn-primary">Press to verify your installation</button>
-
-                </section>
-
-
-
-              </div>
+            <div class="tab-pane" id="sect2">
+              <h1>Section 2</h1>
+            </div>
 
           </div>
-        </div>
-
-
-
+        </section>
 
       </section>
-    </section>
+    </section><!-- /.vbox -->
   </section>
 
-<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-    jQuery(document).ready(function ($) {
-        $('#tabs').tab();
-    });
+  jQuery(document).ready(function ($) {
+      $('#tabs').tab();
+  });
 </script>
 
 </body>
