@@ -193,3 +193,21 @@ header .fa {
   border: none;
   background: #f3f5f9
 }
+
+#signup-rotate .wrapper.front {
+    z-index: 3;
+}
+
+#signup-rotate .wrapper {
+    margin: 0 auto;
+    width: 51%;
+    margin-top: 25px;
+    background: #fff;
+    padding: 15px 50px 25px 50px;
+    border-radius: 5px;
+    border-top: 6px solid #413C58;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
