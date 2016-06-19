@@ -270,6 +270,10 @@ ul#tabs li a {
   color: #413C58;
 }
 
+.nav-tabs.nav-justified > li > a:hover {
+  border-top: 1px solid white;
+}
+
 /* Bootstrap overrides */
 
 @media (min-width: 768px)
