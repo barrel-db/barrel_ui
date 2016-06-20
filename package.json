@@ -1,0 +1,27 @@
+{
+  "name": "barrel",
+  "version": "1.0.0",
+  "description": "The UI for the Barrel DB Administration interface.",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjhampton/barrel_ui.git"
+  },
+  "keywords": [
+    "ui",
+    "barrel_ui",
+    "admin interface"
+  ],
+  "author": "Barrel UI Team",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/barrel-db/barrel_ui/issues"
+  },
+  "homepage": "https://github.com/barrel-db/barrel_ui#readme",
+  "dependencies": {
+    "brunch": "^2.8.2"
+  }
+}
